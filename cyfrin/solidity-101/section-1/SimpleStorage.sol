@@ -26,4 +26,8 @@ contract SimpleStorage {
         listOfPeople.push(Person(_favNum, _name));
         nameToFavNum[_name] = _favNum;
     }
+
+    function retrieve() public view returns (uint256) {
+        return myFavNum;
+    }
 }
